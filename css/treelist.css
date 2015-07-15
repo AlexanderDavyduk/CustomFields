@@ -1,0 +1,39 @@
+.scContentControlSortableMultilist {
+	background-color: #f0f0f0;
+	overflow: hidden;
+	width: 100%;
+}
+.scContentControlSortableMultilist td {
+	display: block;
+	float: left;
+	width: 50%;
+	padding:0;
+	/*vertical-align: top;*/
+}
+.scContentControlSortableMultilist tr + tr td {
+	height: 200px;
+	overflow-y: scroll;
+}
+.scContentControlSortableMultilist .ui-sortable {
+	padding:0;
+	float:none;
+	width: auto;
+	margin: 0;
+	border: 0;
+	min-height: 200px;
+}
+.scContentControlSortableMultilist .ui-sortable li {
+	padding: 7px;
+	cursor: move;
+	margin: 0;
+	border: 1px solid #C5BEBE;
+	border-bottom: 0;
+	background-color:#d4d4d4;
+}
+.scContentControlSortableMultilist .ui-sortable li:last-child {
+	border-bottom: 1px solid #C5BEBE;
+}
+.scContentControlSortableMultilist .ui-sortable li:hover {
+	background-color:#ffffff;
+}
+

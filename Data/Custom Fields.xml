@@ -1,0 +1,99 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>Custom fields for Sitecore</PackageName>
+      <Author>Alexander Davyduk</Author>
+      <Version>1.0 rev. 150714</Version>
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme>The CustomFields module contains four fields: 
+  
+  - Sortable Multilist with drag-and-drop functionality, 
+  - Time Zones Droplist, 
+  - Name-Value Droplist, 
+  - Name-Value Droplists. 
+
+These fields will improve the work of content editors and save their time.
+	  
+IMPORTANT!
+
+After installation few references to scripts and css should be added to following layout “\sitecore\shell\Applications\Content Manager\Default.aspx”:
+  &lt;script type="text/JavaScript" src="/js/jquery-ui.js"&gt;&lt;/script&gt;
+  &lt;script type="text/JavaScript" src="/js/sortable-multilist.js"&gt;&lt;/script&gt;
+  &lt;link href="/css/treelist.css" rel="stylesheet" /&gt;
+</Readme>
+      <Publisher />
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xitems>
+      <Entries>
+        <x-item>/core/sitecore/system/Field types/List Types/Name Value Droplist/{6BE682D1-46C7-48A9-9D54-278A95766391}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Field types/List Types/Name Value Droplists/{2661EA74-EACD-4373-96B2-CFBF4EC248ED}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Field types/List Types/Sortable Multilist/{0D9BCC5B-A0E2-408C-8A66-F421325A1598}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Field types/List Types/Sortable Multilist/Menu/{9C040DEC-2825-4B3E-8644-F56BF225375C}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Field types/List Types/Sortable Multilist/Menu/Deselect All/{24BD24FF-AE0D-4136-9A75-BF056A38C85C}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Field types/List Types/Sortable Multilist/Menu/Select All/{253E8F91-BF41-4B44-847E-B6EAF5180274}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Field types/List Types/TimeZonesDropList/{0BA9FBF3-0D52-46B2-B0B0-F86EFEE318B2}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Merge</ItemMode>
+                  <ItemMergeMode>Merge</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>FIeldTypes</Name>
+    </xitems>
+    <xfiles>
+      <Entries>
+        <x-item>/App_Config/Include/Sitecore.SharedSource.CustomFields.config</x-item>
+        <x-item>/bin/Sitecore.SharedSource.CustomFields.dll</x-item>
+        <x-item>/css/treelist.css</x-item>
+        <x-item>/js/jquery-ui.js</x-item>
+        <x-item>/js/sortable-multilist.js</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Overwrite</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>files</Name>
+    </xfiles>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>
